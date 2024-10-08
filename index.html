@@ -60,7 +60,7 @@
         }
         .quiz-question h2 {
             margin: 0;
-            font-size: 6vw; /* Responsive font size */
+            font-size: 3vw; /* Responsive font size */
             color: #333;
         }
         .quiz-options {
@@ -143,15 +143,15 @@
     <button class="start-button" onclick="startGame()">START</button>
 
     <div class="quiz-question" style="display:none;">
-        <h2>問題</h2>
+        <h2>2024年史上初の50本塁打50盗塁を達成したロサンゼルス・ドジャースの選手は？</h2>
     </div>
 
     <div class="quiz-options-container" style="display:none;">
         <div class="quiz-options">
-            <button class="option red" onclick="checkAnswer(true)">1</button>
-            <button class="option yellow" onclick="checkAnswer(false)">2</button>
-            <button class="option green" onclick="checkAnswer(false)">3</button>
-            <button class="option blue" onclick="checkAnswer(false)">4</button>
+            <button class="option red" onclick="checkAnswer(true)">大谷翔平</button>
+            <button class="option yellow" onclick="checkAnswer(false)">八村塁</button>
+            <button class="option green" onclick="checkAnswer(false)">ダルビッシュ有</button>
+            <button class="option blue" onclick="checkAnswer(false)">三苫薫</button>
         </div>
     </div>
 
@@ -205,7 +205,7 @@
                 popupElement.innerText = '正解';
                 correctSound.play();
                 setTimeout(function() {
-                    popupElement.innerText = 'GAME CLEAR!\n解除コードのヒント１\n『』'; 
+                    popupElement.innerText = 'GAME CLEAR!\n解除コードの1桁目は\n『7』'; 
                 }, 2000);
             } else {
                 popupElement.style.display = 'block';
